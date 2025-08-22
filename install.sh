@@ -18,3 +18,6 @@ cd ~/.zsh-plugins
 
 # Copy zshrc from script folder → ~/.zshrc
 cd;cp "Zshell-install-script/zshrc" ~/.zshrc
+
+echo "Zsh installed. Now close this terminal and open again. Exiting this terminal"
+exit
