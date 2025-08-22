@@ -15,8 +15,10 @@ cd ~/.zsh-plugins
 [ ! -d "zsh-syntax-highlighting" ] && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 [ ! -d "zsh-autosuggestions" ] && git clone https://github.com/zsh-users/zsh-autosuggestions.git
 
-# Copy .zshrc from script’s directory
+# Go back to script directory (where zshrc file is)
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Copy zshrc from script folder → ~/.zshrc
 cp "$SCRIPT_DIR/zshrc" ~/.zshrc
 
 # Verify plugin load in a new zsh process
@@ -25,7 +27,7 @@ zsh -i -c '
 if typeset -f __zsh_autosuggest_start >/dev/null && typeset -f __zsh_highlight_main__ >/dev/null; then
     echo "✅ Autosuggestions and syntax highlighting are active."
 else
-    echo "❌ Plugin check failed. Please run: source ~/.zshrc inside zsh."
+    echo "❌ Plugin check failed. Run: source ~/.zshrc inside zsh."
 fi
 '
 
