@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+
 
 # Update + install zsh & git
 sudo apt update -y
