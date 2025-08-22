@@ -17,4 +17,4 @@ cd ~/.zsh-plugins
 
 
 # Copy zshrc from script folder → ~/.zshrc
-cp "Zshell-install-script/zshrc" ~/.zshrc
+cd;cp "Zshell-install-script/zshrc" ~/.zshrc
