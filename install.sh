@@ -17,8 +17,7 @@ cd ~/.zsh-plugins
 
 
 # Copy zshrc from script folder → ~/.zshrc
-cd; cd zsh-install; cat zshrc > ~/.zshrc  &> /dev/null
-
-echo "Zsh installed. Exiting this terminal"
-
+cd; cd zsh-install; cat zshrc > ~/.zshrc
+zsh
+cd;cd zsh-install;cat zshrc > ~/.zshrc
 zsh
